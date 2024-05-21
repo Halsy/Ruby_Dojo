@@ -1,0 +1,56 @@
+#==============================================================================#
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+#==============================================================================#
+      ##========================##
+      ## DRILL NAME (ARRAYS)    ##
+      ##========================##
+operators	  
+      ##========================##
+      ## HEADER (GENERAL ARRAYS)##
+      ##========================##
+dividing binaries
+      ##========================##
+      ## QUESTION               ##
+      ##......................................................................##
+      ##========================##
+
+      ##========================##
+      ## ANSWER                 ##
+      ##......................................................................##
+      ##========================##
+
+      ##========================##
+      ## QUESTION TYPE          ##
+      ##========================##
+multiple_choice
+coding_test1
+coding_test3
+coding_test4  
+      ##========================##
+      ## ANSWERS                ##
+      ##......................................................................##
+      ##========================##
+	  
+#==============================================================================#
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+* MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER * MASTER
+#==============================================================================#
+Title:       * New Questions Template
+Creator:     * Harold Sy (Corvus)
+Description: * This is a text format template to help me create new questions for
+               my drill programs that I created in the Ruby programming language.
+			   Once the questions are formatted using this template, the program
+			   in this general path: tools/new_questions_loader.rb. 			   

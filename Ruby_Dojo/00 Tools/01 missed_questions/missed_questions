@@ -1,0 +1,135 @@
+
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+   question_string=<<-RSTRING
+write code to open a file for reading only. read and print out what is in the
+file using readline. do not forget to check for end of file, then close the
+file. use puts to print.
+
+file name:..............text_file.txt
+variable:...............file_name
+variable:...............line
+ RSTRING
+   answer=<<-RSTRING
+file_name=File.open('text_file.txt','r')
+while !file_name.eof?
+  line=file_name.readline
+  puts line
+end
+file_name.close
+ RSTRING
+   result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+  
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+   question_string=<<-RSTRING
+define a class called 'my class name' using camel case
+ RSTRING
+   answer=<<-RSTRING
+class MyClassName
+ RSTRING
+   result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+  
+    rolling_count+=1
+    if random_question==rolling_count
+    #..............................................................................
+    question_string=<<-RSTRING
+    ####################################################################################
+# print the following using two nested while loops:                                #
+#                                                                                  #
+# answers should be:                                                               #
+#            =>     *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                   *****                                                          #
+#                                                                                  #
+####################################################################################
+#                                                                                  #
+# DIFFICULTY: EASY                                                                 #
+#                                                                                  #
+####################################################################################
+ RSTRING
+    ruby_string=<<-RSTRING
+    count1=1
+while count1<=10
+  count2=1
+  while count2<=5
+    print '*'
+    count2+=1
+  end
+  puts
+  count1+=1
+end
+ RSTRING
+    answer_string=<<-RSTRING
+    *****
+*****
+*****
+*****
+*****
+*****
+*****
+*****
+*****
+*****
+ RSTRING
+    result,drill_status=coding_test4(question_string,result,random_question,questions_to_go,drill_status,ruby_string,answer_string)
+    end
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+   question_string=<<-RSTRING
+what will the following print?
+
+puts true && (false || true) 
+ RSTRING
+   answer=<<-RSTRING
+true
+ RSTRING
+   result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+  
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+   question_string=<<-RSTRING
+in ruby what is nil considered as, falsey or truthy?
+ RSTRING
+   answer=<<-RSTRING
+falsey
+ RSTRING
+   result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+  
+rolling_count+=1                                                                                           
+if random_question==rolling_count
+#..............................................................................
+   question_string=<<-RSTRING
+The following program finds the longest word in the array. If two words are
+the same size which one will be returned?
+
+array=['cat','bear','goat']
+longest_word=array.inject do |memo,word|
+  memo.length>word.length ? memo : word
+end
+ RSTRING
+   answer="the last word on the list that fit the criteria"
+   answers=<<-RSTRING
+the last word on the list that fit the criteria
+the first word on the list that fit the criteria
+it will choose alphabetically the closest to a
+it will choose alphabetically the closest to z
+ RSTRING
+   result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+end
+  

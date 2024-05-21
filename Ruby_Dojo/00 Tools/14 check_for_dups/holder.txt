@@ -1,0 +1,1490 @@
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+how do we empty a hash?
+    STRING
+    answer='by using the clear method'
+    answers=<<-STRING
+by using the clear method
+by using the empty method
+by using the delete method
+by using the zero method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to remove all of the contents of a hash
+
+given.............my_hash={'martial art':'kajukenbo'}
+    STRING
+    answer=<<-STRING
+my_hash.clear
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we delete key and value pairs in a hash?
+    STRING
+    answer='using delete or delete_if'
+    answers=<<-STRING
+using delete or delete_if
+using []
+using {}
+using ()
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to delete a key and value pair in a hash.
+
+given:...............hash_data={:r=>'red',:b=>'blue'}
+delete:..............:b=>'blue'
+    STRING
+    answer=<<-STRING
+hash_data.delete(:b)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when using the 'delete' method on a hash to delete a key and value pair,
+what should we know?
+    STRING
+    answer='delete will modify the original hash'
+    answers=<<-STRING
+delete will modify the original hash
+delete will create a new hash
+delete will return true or false
+delete will return key value pairs
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when using the 'delete' method on a hash, what will be returned?
+    STRING
+    answer='just the value being deleted'
+    answers=<<-STRING
+just the value being deleted
+the key value pair
+the new hash
+nil
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is the 'delete' method used for in a hash?
+    STRING
+    answer='to delete key and value pairs'
+    answers=<<-STRING
+to delete key and value pairs
+to delete values
+to delete keys
+to clear the hash
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is the difference between 'delete' and 'delete_if' in hashes?
+    STRING
+    answer='delete can only remove one item based on the key'
+    answers=<<-STRING
+delete can only remove one item based on the key
+delete can remove multiple items
+delete_if can only remove one item based on the key or value
+delete_if does not modify the original hash
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is the 'delete_if' method used for in a hash?
+    STRING
+    answer='delete key/value based on a condition'
+    answers=<<-STRING
+to iterate over a hash
+to delete nils in a hash
+to clear a hash
+delete key/value based on a condition
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what does the 'delete_if' method return?
+    STRING
+    answer='a copy of the modified hash'
+    answers=<<-STRING
+a copy of the modified hash
+nil
+deleted keys and values
+0
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+the 'delete_if' method returns a copy of the modified hash but what
+else does it do?
+    STRING
+    answer='modifies the original hash'
+    answers=<<-STRING
+modifies the original hash
+clears the hash
+orders the hash
+returns nil
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code using 'delete_if' to remove values less than 3.
+
+given:...............hash_data={:a=>1,:b=>2,:c=>3,:d=>4,:e=>5}
+variables:...........key, value
+    STRING
+    answer=<<-STRING
+hash_data.delete_if{|key,value| value<3}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to delete all even values from a hash. use in-line form.
+
+given.........hash_data={:a=>1, :b=>2, :c=>3, :d=>4, :e=>5, :f=>6}
+variables.....key,value
+    STRING
+    answer=<<-STRING
+hash_data.delete_if{|key,value| value.even?}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to delete the value 4 from the hash
+
+given.........hash_data={:a=>1, :b=>2, :c=>3, :d=>4, :e=>5, :f=>6}
+variables.....key,value
+    STRING
+    answer=<<-STRING
+hash_data.delete_if{|key,value| value==4}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+if we want to delete items in a hash based on a condition which should we use?
+    STRING
+    answer='delete_if'
+    answers=<<-STRING
+delete_if
+delete
+empty
+clear
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end  
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+if we want to delete an item by the value which should we use?
+    STRING
+    answer='delete_if'
+    answers=<<-STRING
+delete_if
+delete
+empty
+clear
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end 
+  
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what method do we use to delete a key and value pair from a hash using
+either key or value?
+    STRING
+    answer='delete_if'
+    answers=<<-STRING
+delete_if
+clear
+reject
+remove
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+end 
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+using the 'each' method, iterate over a hash and print the key and value
+using the following, in block form. use puts:
+
+given:................hash_data={:r=>'red',:b=>'blue'}
+variables:............letter,color
+format:...............(letter) is for (color)
+    STRING
+    answer=<<-STRING
+hash_data.each do |letter,color|
+  puts "\#{letter} is for \#{color}"
+end
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+how do we check if a hash is empty?
+    STRING
+    answer='by using the empty? method'
+    answers=<<-STRING
+by using the empty? method
+by using the zero? method
+by using the size method
+by using the is_empty? method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to check if a hash is empty
+
+given.............my_hash={}
+use variable......result
+    STRING
+    answer=<<-STRING
+result=my_hash.empty?
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+how do we check if two hashes have the same key and value pairs?
+    STRING
+    answer='by using the eql? method'
+    answers=<<-STRING
+by using the eql? method
+by using the equal? method
+by using the same? method
+by using the = method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to check if two hashes have the same key and value pairs
+
+given.............hash1={'martial art':'kajukenbo'}
+     .............hash2={'martial art':'kajukenbo'}
+use variable......result
+#=>...............true
+    STRING
+    answer=<<-STRING
+result=hash1.eql?(hash2)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+how do we check if two hashes refers to the same hash?
+    STRING
+    answer='by using the equal? method'
+    answers=<<-STRING
+by using the eql? method
+by using the equal? method
+by using the same? method
+by using the = method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to check if two hashes refers to the same hash
+
+given.............hash1={'martial art':'kajukenbo'}
+     .............hash2=hash1
+use variable......result
+#=>...............true
+    STRING
+    answer=<<-STRING
+result=hash1.equal?(hash2)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+how do we access values in a hash by using the 'fetch' method?
+    STRING
+    answer='by fetching the key'
+    answers=<<-STRING
+by fetching the key
+by fetching the value
+by fetching the index
+by fetching the range
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+when using the 'fetch' method with a hash what does each parameter
+represent respectively?
+    STRING
+    answer='(key,default)'
+    answers=<<-STRING
+(key,default)
+(key,value)
+(index,value)
+(index,default)
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to access a value from a hash using the 'fetch' method...
+
+given.........................hash={'a'=>100,'b'=>200}
+variable......................value
+access........................100
+    STRING
+    answer=<<-STRING
+value=hash.fetch('a')
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to access a value from a hash using the 'fetch' method
+with a default...
+
+given.........................hash={'a'=>100,'b'=>200}
+variable......................value
+access the key................'z'
+default.......................'go fish'
+    STRING
+    answer=<<-STRING
+value=hash.fetch('z','go fish')
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to access a value from a hash using the 'fetch' method
+with a default...
+
+given.........................hash={'a'=>100,'b'=>200}
+variable......................value, letter
+access the key................'z'
+default......................."\#{letter} not found, go fish"
+    STRING
+    answer=<<-STRING
+value=hash.fetch('z'){|letter| "\#{letter} not found, go fish"}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+using the 'fetch' method with hashes, what are the different ways we can
+access values from a hash?
+    STRING
+    answer='(key),(key,default),(key){default expression}'
+    answers=<<-STRING
+(key),(key,default),(key){default expression}
+(key),(key,default)
+(index),(index,default){default expression}
+(key,value)
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+in the following program, why is it ok to use:
+"\#{letter} not found, go fish", instead of a puts?
+
+hash={'a'=>100,'b'=>200}
+value=hash.fetch('z'){|letter| "\#{letter} not found, go fish"}
+    STRING
+    answer="because it is considered as a string to be passed to the variable 'value'"
+    answers=<<-STRING
+because it is considered as a string to be passed to the variable 'value'
+because it is still considered as a puts and will print
+because it is interchangeable with a puts or print
+because the fetch method will print it
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what is the 'freeze' method used for in hashes?
+    STRING
+    answer='to prevent modifications of a hash'
+    answers=<<-STRING
+to prevent modifications of a hash
+to make the hash cool
+to prevent adding items to a hash
+to prevent accessing elements of a hash
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+given the following hash, make sure it is not modifiable.
+
+given array...................hash_data={:a=>1,:b=>2,:c=>3,:d=>4,:e=>5}
+    STRING
+    answer=<<-STRING
+hash_data.freeze
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what is the 'frozen?' method used for in a hash?
+    STRING
+    answer='to check if a hash is modifiable'
+    answers=<<-STRING
+to check if a hash is modifiable
+to check if a hash is cool
+to check if a hash is stuck
+to check if a hash is done
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to check if a hash is modifiable
+
+given array..................hash_data={:a=>1,:b=>2,:c=>3,:d=>4,:e=>5}
+variable.....................frozen_hash
+    STRING
+    answer=<<-STRING
+frozen_hash=hash_data.frozen?
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is a hash?
+    STRING
+    answer='a collection of key and value pairs'
+    answers=<<-STRING
+a collection of key and value pairs
+a collection of objects
+a collection of strings
+a collection of values
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is allowed in hashes?
+    STRING
+    answer='duplicate values'
+    answers=<<-STRING
+duplicate values
+duplicate keys
+duplicate keys and values
+nil
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is not allowed in hashes?
+    STRING
+    answer='duplicate keys'
+    answers=<<-STRING
+duplicate values
+duplicate keys
+duplicate keys and values
+nil
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when an empty hash is created it has a default value or one can be
+assigned. when one is assigned, when is it returned?
+    STRING
+    answer='when an item is not found'
+    answers=<<-STRING
+when an item is not found
+when the end of the hash is reached
+when the default is reached
+when a duplicate key is found
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when an empty hash is created it has a default value or one can be assigned.
+when no default value is assigned what will be the default value?
+    STRING
+    answer='nil'
+    answers=<<-STRING
+nil
+zero
+-1
+false
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+create an empty hash using the new method and assign a default value:
+
+hash name:................empty_hash
+default value:............'item not found'
+    STRING
+    answer=<<-STRING
+empty_hash=Hash.new('item not found')
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+    #..............................................................................
+    question_string=<<-STRING
+there is a shorthand to creating hashes without using the rocket operator, use
+this shorthand method to make the following hash:
+
+hash name............................my hash
+keys.................................name,alignment
+values...............................rabbid,chaotic
+    STRING
+    answer=<<-STRING
+my_hash={'name':'rabbid','alignment':'chaotic'}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we check to see if a hash contains a specific key?
+    STRING
+    answer='by using the has_key? method'
+    answers=<<-STRING
+by using the has_key? method
+by using the keys? method
+by using is_key? method
+by using what_key? method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to check if a specific key is in a hash.
+
+given:..............hash_data={:a=>1,:b=>2,:c=>3}
+variable:...........key
+find:...............:c
+    STRING
+    answer=<<-STRING
+key=hash_data.has_key?(:c)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to check if a specific value is in a hash.
+
+given:..............hash_data={:a=>1,:b=>2,:c=>3}
+variable:...........value
+find:...............2
+    STRING
+    answer=<<-STRING
+value=hash_data.has_value?(2)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we check to see if a hash contains a specific value?
+    STRING
+    answer='by using the has_value? method'
+    answers=<<-STRING
+by using the has_value? method
+by using the value? method
+by using is_value? method
+by using what_value? method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what is the keep_if method used for in hashes?
+    STRING
+    answer='to create a new or modify an existing hash keeping items based on a condition'
+    answers=<<-STRING
+to create a new or modify an existing hash keeping items based on a condition
+to create a new hash removing items based on a condition
+modify an existing hash keeping items based on a condition
+modifying an existing hash removing items based on a condition
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to keep food items that are longer than 4 characters while
+modifying an existing hash. use the length method. use in-line form.
+
+given.............hash3={'a'=>'apple','e'=>'eggplant','k'=>'kiwi'}
+variables.........letter, food
+#=>...............{"a"=>"apple", "e"=>"eggplant"}
+    STRING
+    answer=<<-STRING
+hash3.keep_if{|letter,food| food.length>4}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to keep food items that are longer than 4 characters while
+creating a new hash. use the length method. use in-line form.
+
+given.............hash3={'a'=>'apple','e'=>'eggplant','k'=>'kiwi'}
+variables.........answer, letter, food
+#=>...............{"a"=>"apple", "e"=>"eggplant"}
+    STRING
+    answer=<<-STRING
+answer=hash3.keep_if{|letter,food| food.length>4}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we collect all the keys in a hash and put them in an array?
+    STRING
+    answer='by using the keys method'
+    answers=<<-STRING
+by using the keys method
+by using collect method
+by using <<
+by using ()
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to collect all the keys in a hash and put them in an array
+
+given:..............hash_data={:a=>1,:b=>2,:c=>3}
+variable:...........key_collection
+    STRING
+    answer=<<-STRING
+key_collection=hash_data.keys
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+given the hash below, how do we find the person with the highest age?
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+    STRING
+    answer='by using the max_by method'
+    answers=<<-STRING
+by using the min_by method
+by using the max_by method
+by using the min method
+by using the max method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to find the person with the highest age in the hash below.
+use in-line method.
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+use variables..............person, name, age
+#=>........................["bill",35]
+    STRING
+    answer=<<-STRING
+person=people.max_by{|name,age| age}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+  question_string=<<-STRING
+write code to find the person with the highest age in the hash below. use a block form.
+
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+use variables..............person, name, age
+#=>........................["bill",35]
+  STRING
+  answer=<<-STRING
+person=people.max_by do |name,age|
+  age
+end
+  STRING
+  result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we merge two hashes?
+    STRING
+    answer='by using merge or merge!'
+    answers=<<-STRING
+by using merge or merge!
+by using + operator
+by using * operator
+by using | operator
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what is the difference between 'merge' and 'merge!'?
+    STRING
+    answer='merge! modifies the original hash'
+    answers=<<-STRING
+merge! modifies the original hash
+merge clears the hash
+merge! returns nil
+merge uses interpolation
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code using  the 'merge' method
+
+given:...............hash_data1={:a=>1,:b=>2}
+                     hash_data2={:c=>1,:d=>2}
+use:.................hash_data3
+    STRING
+    answer=<<-STRING
+hash_data3=hash_data1.merge(hash_data2)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when using the 'merge' or 'merge!' methods on a hash, what is inside the
+() called?
+
+example:.........hash_data3=hash_data1.merge(hash_data2)
+    STRING
+    answer='merged hash'
+    answers=<<-STRING
+calling hash
+merging hash
+caller hash
+merged hash
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when using the 'merge' or 'merge!' methods on a hash, what is before the
+.merge called?
+
+example:.........hash_data3=hash_data1.merge(hash_data2)
+    STRING
+    answer='calling hash'
+    answers=<<-STRING
+calling hash
+merging hash
+caller hash
+merged hash
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+when merging two hashes, and duplicate keys are present between them,
+what will happen?
+    STRING
+    answer='the calling hash will be overwritten'
+    answers=<<-STRING
+the calling hash will be overwritten
+both keys will be left out
+an error will be thrown
+the merged hash will be overwritten
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+given the following code, what will be printed out
+
+given:...................hash_data1={:a=>1,:b=>2}
+                         hash_data2={:b=>3,:c=>4}
+                         hash_data3=hash_data1.merge(hash_data2)
+                         puts(hash_data3.inspect)
+    STRING
+    answer='{:a=>1,:b=>3,:c=>4}'
+    answers=<<-STRING
+{:a=>1,:b=>3,:c=>4}
+{:a=>1,:b=>2,:c=>4}
+{:a=>1,:b=>2,:b=>3,:c=>4}
+{:a=>1,:c=>4}
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+using the 'merge!' method, what does it return?
+    STRING
+    answer='a copy of the modified hash'
+    answers=<<-STRING
+a copy of the modified hash
+the calling hash
+the merged hash
+nothing
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code using the 'merge!' method.
+
+given:..............hash_data1{:a=>1, :b=>2}
+                    hash_data2{:b=>3, :c=>4}
+    STRING
+    answer=<<-STRING
+hash_data1.merge!(hash_data2)
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+given the hash below, how do we find the person with the lowest age?
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+    STRING
+    answer='by using the min_by method'
+    answers=<<-STRING
+by using the min_by method
+by using the max_by method
+by using the min method
+by using the max method
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to find the person with the lowest age in the hash below.
+use in-line form.
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+use variables..............person, name, age
+#=>........................["joe",21]
+    STRING
+    answer=<<-STRING
+person=people.min_by{|name,age| age}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+  question_string=<<-STRING
+write code to find the person with the lowest age in the hash below. use block form.
+
+given hash.................people={'joe'=>21, 'bill'=>35, 'sally'=>24}
+use variables..............person, name, age
+#=>........................["joe",21]
+  STRING
+  answer=<<-STRING
+person=people.min_by do |name,age|
+  age
+end
+  STRING
+  result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+before we can use any operator with assignment with a hash such as:
++= or *=, what do we need to do first?
+    STRING
+    answer='hash=Hash.new(0)'
+    answers=<<-STRING
+hash=Hash.new(0)
+hash={}
+hash={0}
+hash=Hash.new
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+using the 'new 'method, create an empty hash
+
+hash name:................empty_hash
+    STRING
+    answer=<<-STRING
+empty_hash=Hash.new
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to reject animals from a hash that are bigger than 3 characters
+while creating a new hash. use the length method. use in-line method.
+
+given.................hash1={'b'=>'bird','c'=>'cat','d'=>'dog'}
+variables.............answer, letter, animal
+#=>...................{"c"=>"cat", "d"=>"dog"}
+    STRING
+    answer=<<-STRING
+answer=hash1.reject{|letter,animal| animal.length>3}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what is the select method used for in hashes?
+    STRING
+    answer='create a new hash selecting items to keep based on a condition'
+    answers=<<-STRING
+create a new hash selecting items to keep based on a condition
+modify an existing hash selecting items to keep based on a condition
+create a new hash selecting items not to keep based on a condition
+modify an existing hash selecting items not to keep based on a condition
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what is the select! method used for in hashes?
+    STRING
+    answer='modify an existing hash selecting items to keep based on a condition'
+    answers=<<-STRING
+create a new hash selecting items to keep based on a condition
+modify an existing hash selecting items to keep based on a condition
+create a new hash selecting items not to keep based on a condition
+modify an existing hash selecting items not to keep based on a condition
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to select the race of characters to keep in a hash that has
+more than 3 letters while creating a new hash. use the length method.
+use in-line form.
+
+given...............hash2={'d'=>'dwarf','h'=>'human','e'=>'elf'}
+variables...........answer, letter, race
+#=>.................{"d"=>"dwarf", "h"=>"human"}
+    STRING
+    answer=<<-STRING
+answer=hash2.select{|letter,race| race.length>3}
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+rolling_count+=1
+if random_question==rolling_count
+#..............................................................................
+  question_string=<<-STRING
+write code to select the race of characters to keep in a hash that has
+more than 3 letters while creating a new hash. use the length method.
+use block form.
+
+given...............hash2={'d'=>'dwarf','h'=>'human','e'=>'elf'}
+variables...........answer, letter, race
+#=>.................{"d"=>"dwarf", "h"=>"human"}
+  STRING
+  answer=<<-STRING
+answer=hash2.select do |letter,race|
+race.length>3
+end
+  STRING
+  result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what are symbols?
+    STRING
+    answer='symbols are names starting with a colon, :'
+    answers=<<-STRING
+symbols are names starting with a colon, :
+symbols are punctuation marks
+symbols are numbers
+symbols are math signs
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+what does the to_h method do to a nested array?
+    STRING
+    answer='it converts a nested array to a hash'
+    answers=<<-STRING
+it converts a nested array to a hash
+it converts a nested array to an array
+it converts a nested array string
+it converts a nested array to a range
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+write code to convert a nested array to a hash
+
+given hash.................array1=[["a", "apple"], ["b", "berry"]]
+use variable...............hash1
+#=>........................{"a"=>"apple", "b"=>"berry"}
+
+    STRING
+    answer=<<-STRING
+hash1=array1.to_h
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we collect all the values in a hash and put them in an array?
+    STRING
+    answer='by using the values method'
+    answers=<<-STRING
+by using the keys method
+by using the values method
+by using <<
+by using ()
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to collect all the values in a hash and put them in an array
+
+given:..............hash_data={:a=>1,:b=>2,:c=>3}
+variable:...........values_collected
+    STRING
+    answer=<<-STRING
+values_collected=hash_data.values
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+    #..............................................................................
+    question_string=<<-STRING
+write code using the 'values_at' method to access a value from a hash using
+the keys:
+
+given.............................hash={'cat'=>'feline','dog',=>'canine'}
+use variable......................value
+use key...........................'cat','dog'
+    STRING
+    answer=<<-STRING
+value=hash.values_at('cat','dog')
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+using the 'values_at' method with a hash, what are the different ways we
+can access values from a hash?
+    STRING
+    answer="(key1),(key1,key2,..)"
+    answers=<<-STRING
+(key1),(key1,key2,..)
+(key1),(key1..key2)
+(key1),(key1..-key2)
+(key1),(value)
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#..............................................................................
+    question_string=<<-STRING
+when using the 'values_at' method to access the values in a hash, what
+should we watch out for?
+    STRING
+    answer="the data type of the keys"
+    answers=<<-STRING
+the data type of the keys
+the data type of the values
+the key length
+the value length
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+what do we use to create a hash?
+    STRING
+    answer='new method or {}'
+    answers=<<-STRING
+new method or {}
+({})
+||= or !!
+|| or &&
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+using the {}, create an empty hash
+
+hash name:................empty_hash
+    STRING
+    answer=<<-STRING
+empty_hash={}
+    STRING
+    result,drill_status=coding_testI(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+how do we add key and value pairs to a hash?
+    STRING
+    answer='hash_name[key]=value'
+    answers=<<-STRING
+hash_name[key]=value
+hash_name<<key=>value
+hash_name.push(key=>value)
+hash_name.shift(key=>value)
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+#.................................................................................
+    question_string=<<-STRING
+write code to add a key and value pair to a hash.
+
+given:...............hash_data={:r=>'red',:b=>'blue'}
+add:.................:p=>'pink'
+    STRING
+    answer=<<-STRING
+hash_data[:p]='pink'
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+
+
+  rolling_count+=1
+  if random_question==rolling_count
+    #.................................................................................
+    question_string=<<-STRING
+how do we access values in a hash using keys?
+    STRING
+    answer='value=hash_name[key]'
+    answers=<<-STRING
+value=hash_name[key]
+value=hash_name(key)
+value=hash_name.key
+value=hash_name=key
+    STRING
+    result,drill_status=multiple_choice(question_string,answer,answers,result,random_question,questions_to_go,drill_status)
+  end
+
+  rolling_count+=1
+  if random_question==rolling_count
+    #.................................................................................
+    question_string=<<-STRING
+write code to access the value 22 by using the key.
+
+given:................hash_data={:a=>10,:b=>22}
+variable:.............value
+    STRING
+    answer=<<-STRING
+value=hash_data[:b]
+    STRING
+    result,drill_status=coding_test1(question_string,answer,result,random_question,questions_to_go,drill_status)
+  end
+  
